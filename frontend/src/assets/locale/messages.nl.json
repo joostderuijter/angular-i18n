@@ -1,0 +1,9 @@
+{
+  "locale": "nl",
+  "translations": {
+    "title": "Dit is een demo die Angular's i18n package laat zien",
+    "banana.translation": "Banaan",
+    "apple.translation": "Appel",
+    "melon.translation": "Meloen"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "locale": "en",
+  "translations": {
+    "title": "This is a demo demonstrating Angular's i18n package",
+    "banana.translation": "Banana",
+    "apple.translation": "Apple",
+    "melon.translation": "Melon"
+  }
+}

@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 @Configuration
 class WebConfig: WebMvcConfigurer {
     override fun addViewControllers(registry: ViewControllerRegistry) {
-        registry.addViewController("/").setViewName("/index.html")
+        registry.addViewController("/english").setViewName("/en/index.html")
+        registry.addViewController("/dutch").setViewName("/nl/index.html")
     }
 }

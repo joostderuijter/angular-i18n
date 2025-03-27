@@ -49,12 +49,19 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": ["nl", "en"]
             },
             "development": {
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "nl": {
+              "localize": ["nl"]
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -67,22 +74,18 @@
             },
             "development": {
               "buildTarget": "frontend:build:development"
+            },
+            "nl": {
+              "buildTarget": "frontend:build:development,nl"
+            },
+            "en": {
+              "buildTarget": "frontend:build:development,en"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
-        },
-        "i18n": {
-          "locales": {
-            "nl": {
-              "translation": "src/assets/locale/messages.nl.json"
-            },
-            "en": {
-              "translation": "src/assets/locale/messages.en.json"
-            }
-          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -103,6 +106,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        }
+      },
+      "i18n": {
+        "locales": {
+          "nl": {
+            "translation": "src/assets/locale/messages.nl.json"
+          },
+          "en": {
+            "translation": "src/assets/locale/messages.en.json"
           }
         }
       }

@@ -1,0 +1,1 @@
+See https://joost.im/angular-i18n
